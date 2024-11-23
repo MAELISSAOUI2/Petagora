@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { ArrowRight, ArrowLeft } from 'lucide-react';
 
 const slides = [
@@ -15,7 +15,7 @@ const slides = [
     image: 'https://images.unsplash.com/photo-1576201836106-db1758fd1c97?auto=format&fit=crop&q=80',
   },
   {
-    title: 'World\'s Largest Pet Health Data Repository',
+    title: 'Tunisia\'s Largest Pet Health Data Repository',
     image: 'https://images.unsplash.com/photo-1587560699334-cc4ff634909a?auto=format&fit=crop&q=80',
   },
   {
