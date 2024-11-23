@@ -1,0 +1,30 @@
+/* Option 1: Larger triangle */
+.absolute {
+  right: 0;
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 15px solid #059669;
+  transform: translate(50%, -50%);
+  background: none;
+}
+
+/* Option 2: Rounded arrow */
+.absolute {
+  right: 0;
+  width: 12px;
+  height: 3px;
+  background-color: #059669;
+  transform: translate(50%, -50%);
+  border-radius: 2px;
+}
+
+/* Option 3: Larger diamond */
+.absolute {
+  right: 0;
+  width: 10px;
+  height: 10px;
+  background-color: #059669;
+  transform: translate(50%, -50%) rotate(45deg);
+} 
