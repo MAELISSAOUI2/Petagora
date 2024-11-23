@@ -2,29 +2,29 @@ import { motion } from 'framer-motion';
 
 const steps = [
   {
-    title: "Equip Your Pet with the PetPace Collar",
-    description: "Start monitoring your pet's health by equipping them with the advanced PetPace Collar.",
-    image: "/images/how-it-works/smart-collar.svg"
+    title: "Equip Your Pet with the PetAgora Collar",
+    description: "Start monitoring your pet's health by equipping them with the advanced PetAgora Collar.",
+    image: "/images/how-it-works/smart-collar.png"
   },
   {
     title: "Data Transmission",
     description: "The collar collects vital health data and transmits it wirelessly to your smartphone.",
-    image: "/images/how-it-works/data-transmission.svg"
+    image: "/images/how-it-works/data-transmission.gif"
   },
   {
     title: "Upload Data to the Cloud",
     description: "All health data is securely uploaded to the cloud for storage and advanced analysis.",
-    image: "/images/how-it-works/cloud-upload.svg"
+    image: "/images/how-it-works/cloud-upload.gif"
   },
   {
     title: "AI-Powered Analysis",
     description: "Our advanced Gen AI algorithms analyze the data to detect anomalies and provide actionable insights.",
-    image: "/images/how-it-works/ai-analysis.svg"
+    image: "/images/how-it-works/ai-analysis.gif"
   },
   {
     title: "Personal Health Advisor Suggestions",
     description: "Your AI-based Personal Health Advisor suggests the best training, food, and routine for your pet.",
-    image: "/images/how-it-works/health-advisor.svg"
+    image: "/images/how-it-works/health-advisor.jpg"
   }
 ];
 

@@ -3,7 +3,7 @@ import React from 'react';
 const HowItWorksSteps = [
   {
     title: "Smart Health Monitoring",
-    description: "Monitor your pet's vital signs 24/7 with the advanced PetPace smart collar, tracking everything from heart rate to activity levels."
+    description: "Monitor your pet's vital signs 24/7 with the advanced PetAgora smart collar, tracking everything from heart rate to activity levels."
   },
   {
     title: "Real-Time Data Updates",

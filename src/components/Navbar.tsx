@@ -21,6 +21,7 @@ export default function Navbar() {
           
           <div className="hidden md:flex items-center space-x-8">
             <a href="#features" className="text-gray-600 hover:text-emerald-600">Features</a>
+            <a href="#setup" className="text-gray-600 hover:text-emerald-600">Setup</a>
             <a href="#pricing" className="text-gray-600 hover:text-emerald-600">Pricing</a>
             <a href="#testimonials" className="text-gray-600 hover:text-emerald-600">Testimonials</a>
             <button 
@@ -51,6 +52,7 @@ export default function Navbar() {
         <div className="md:hidden">
           <div className="px-2 pt-2 pb-3 space-y-1">
             <a href="#features" className="block px-3 py-2 text-gray-600 hover:text-emerald-600">Features</a>
+            <a href="#setup" className="block px-3 py-2 text-gray-600 hover:text-emerald-600">Setup</a>
             <a href="#pricing" className="block px-3 py-2 text-gray-600 hover:text-emerald-600">Pricing</a>
             <a href="#testimonials" className="block px-3 py-2 text-gray-600 hover:text-emerald-600">Testimonials</a>
             <button 
