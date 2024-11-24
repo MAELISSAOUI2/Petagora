@@ -5,23 +5,22 @@ const plans = [
   {
     name: 'Basic',
     description: '1 Year',
-    monthlyPrice: 11.9,
+    monthlyPrice: 11.900,
     collarPrice: 235,
-    yearlyPrice: 142.8,
+    yearlyPrice: 142.800,
     features: [
       'Health record management',
       'Vaccination reminders',
       'Community access (limited)',
       'Basic activity tracking',
-          '3-year option: Free collar with 11.900 TND/month',
     ],
   },
 
   {
     name: 'Free Collar',
-    description: '2 Years Engagement',
-    monthlyPrice: 11.9,
-    yearlyPrice: 162,
+    description: '3 Years Engagement',
+    monthlyPrice: 11.900,
+    yearlyPrice: 142.800,
     features: [
       'All Basic features',
       'Real-time health analytics',
@@ -39,10 +38,10 @@ const plans = [
     yearlyPrice: 162,
     features: [
       'All Basic features',
-      'Real-time health analytics',
-      'Telehealth consultations',
+      'Advanced health analytics',
+      'Telehealth consultations access',
       'Geofencing and GPS tracking',
-      'Advanced activity insights',
+      'Personal health advisor',
     ],
 
   },
@@ -50,13 +49,12 @@ const plans = [
     name: 'Custom Add-ons',
     description: 'For personalized experiences',
     monthlyPrice: 200,
-    yearlyPrice: 2400,
+    yearlyPrice: 300,
     features: [
       'Genetic Analysis (400 TND/report)',
-      'Personalized Services (200 TND/month)',
       'One-time consultation (35 TND)',
-      'Telehealth Session (35 TND/session)',
-      'Telehealth Package (300 TND/year for 10 sessions)',
+      'Single Telehealth Session (35 TND/session)',
+      'Telehealth Package (300 TND for 10 sessions)',
     ],
   },
 ];
@@ -105,18 +103,23 @@ export default function Pricing() {
               <div className="text-center">
                 <h3 className="text-base font-semibold text-gray-900">{plan.name}</h3>
                 <p className="mt-1 text-xs text-gray-500">{plan.description}</p>
-                {plan.name === 'Basic' ? (
+                {plan.name === 'Pay As You Go' ? (
+                  <p className="mt-2">
+                    <span className="text-base font-bold text-gray-900">Pay as you go</span>
+                    <span className="text-xs text-gray-500 block">Usage-based pricing</span>
+                  </p>
+                ) : plan.name === 'Basic' ? (
                   <div className="mt-2">
                     <p className="text-xs text-gray-600">Upfront: <span className="font-semibold">235 TND</span> for collar</p>
                     <p className="mt-1">
-                      <span className="text-2xl font-bold text-gray-900">11.900</span>
+                      <span className="text-2xl font-bold text-gray-900">{plan.monthlyPrice.toFixed(3)}</span>
                       <span className="text-xs text-gray-500"> TND/month</span>
                     </p>
                   </div>
                 ) : (
                   <p className="mt-2">
                     <span className="text-2xl font-bold text-gray-900">
-                      {isAnnual ? plan.yearlyPrice : plan.monthlyPrice}
+                      {isAnnual ? plan.yearlyPrice.toFixed(3) : plan.monthlyPrice.toFixed(3)}
                     </span>
                     <span className="text-xs text-gray-500"> TND/{isAnnual ? 'year' : 'month'}</span>
                   </p>
